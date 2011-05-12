@@ -1,6 +1,29 @@
 = governor_twitter
 
-Description goes here.
+<b>Governor[http://carpeliam.github.com/governor/]</b> (named after Rod
+Blagojevich) is the pluggable blogging platform for Rails, built for people
+who want to build their blog into their website, not build their website into
+their blog.
+
+*governor_twitter* is a plugin for Governor, allowing you to automatically
+post to twitter whenever you post or update an article.
+
+== Dependencies
+
+* Governor[http://carpeliam.github.com/governor/]
+* twitter[https://github.com/jnunemaker/twitter] gem
+* shortie[https://github.com/lassebunk/shortie] gem, for URL shortening
+* GovernorBackground[https://github.com/carpeliam/governor_background]
+* And because of the GovernorBackground dependency, either
+  Delayed_Job[https://github.com/collectiveidea/delayed_job] or
+  Resque[https://github.com/defunkt/resque]. If you use Resque, it's highly
+  recommended that you use
+  resque-status[https://github.com/quirkey/resque-status] as well.
+
+== Setting up
+
+First, install the above dependencies. Then, make sure you follow instructions
+for configuring Twitter, namely adding an initializer with your keys/secrets.
 
 == Contributing to governor_twitter
  
