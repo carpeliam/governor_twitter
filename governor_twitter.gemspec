@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/governor_twitter/models/methods.rb",
     "lib/governor_twitter/rails.rb",
     "spec/governor_twitter_spec.rb",
+    "spec/models/article_spec.rb",
     "spec/rails_app/.gitignore",
     "spec/rails_app/Gemfile",
     "spec/rails_app/Gemfile.lock",
@@ -96,6 +97,7 @@ Gem::Specification.new do |s|
   s.summary = %q{A plugin that connects Governor with a Twitter account.}
   s.test_files = [
     "spec/governor_twitter_spec.rb",
+    "spec/models/article_spec.rb",
     "spec/rails_app/app/controllers/application_controller.rb",
     "spec/rails_app/app/controllers/home_controller.rb",
     "spec/rails_app/app/helpers/application_helper.rb",
