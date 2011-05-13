@@ -9,8 +9,8 @@ gem 'sqlite3'
 
 gem 'devise'
 gem 'delayed_job'
-gem 'governor', :path => '../../../governor'
-gem 'governor_background', :path => '../../../governor_background'
+gem 'governor'
+gem 'governor_background'
 gem 'governor_twitter', :path => '../..'
 
 gem 'dynamic_form'

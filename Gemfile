@@ -6,10 +6,10 @@ source "http://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 
-gem 'twitter'
+gem 'twitter', '>= 1.1'
 gem 'shortie'
-gem 'governor', :path => '../governor'
-gem 'governor_background', :path => '../governor_background'
+gem 'governor', '>= 0.5.3'
+gem 'governor_background', '~> 0.2.2'
 
 group :development, :test do
   gem 'jeweler', '~> 1.5.2'
