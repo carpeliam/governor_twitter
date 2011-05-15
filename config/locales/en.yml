@@ -1,0 +1,5 @@
+en:
+  governor_background:
+    twitter_post_completed: 'Your article was successfully posted to Twitter.'
+    twitter_post_failed: 'Unable to tweet your article: %{message}.'
+    twitter_post_killed: 'Your tweet was interrupted: %{message}.'
