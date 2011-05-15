@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Liam Morley"]
-  s.date = %q{2011-05-13}
+  s.date = %q{2011-05-15}
   s.description = %q{A plugin for the Rails 3-based Governor blogging system that posts your blog entries to Twitter for you.}
   s.email = %q{liam@carpeliam.com}
   s.extra_rdoc_files = [
@@ -29,10 +29,8 @@ Gem::Specification.new do |s|
     "governor_twitter.gemspec",
     "lib/governor_twitter.rb",
     "lib/governor_twitter/controllers/methods.rb",
-    "lib/governor_twitter/models/methods.rb",
     "lib/governor_twitter/rails.rb",
     "spec/governor_twitter_spec.rb",
-    "spec/models/article_spec.rb",
     "spec/rails_app/.gitignore",
     "spec/rails_app/Gemfile",
     "spec/rails_app/Gemfile.lock",
@@ -97,7 +95,6 @@ Gem::Specification.new do |s|
   s.summary = %q{A plugin that connects Governor with a Twitter account.}
   s.test_files = [
     "spec/governor_twitter_spec.rb",
-    "spec/models/article_spec.rb",
     "spec/rails_app/app/controllers/application_controller.rb",
     "spec/rails_app/app/controllers/home_controller.rb",
     "spec/rails_app/app/helpers/application_helper.rb",
@@ -136,7 +133,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<twitter>, [">= 1.1"])
       s.add_runtime_dependency(%q<shortie>, [">= 0"])
       s.add_runtime_dependency(%q<governor>, [">= 0.5.3"])
-      s.add_runtime_dependency(%q<governor_background>, ["~> 0.2.2"])
+      s.add_runtime_dependency(%q<governor_background>, [">= 0.3.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_development_dependency(%q<sqlite3>, [">= 0"])
       s.add_development_dependency(%q<rspec-rails>, [">= 0"])
@@ -146,14 +143,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<activerecord-nulldb-adapter>, [">= 0"])
       s.add_development_dependency(%q<will_paginate>, ["~> 3.0.beta"])
       s.add_development_dependency(%q<devise>, [">= 0"])
-      s.add_development_dependency(%q<governor_twitter>, [">= 0"])
       s.add_development_dependency(%q<delayed_job>, [">= 0"])
+      s.add_development_dependency(%q<resque>, [">= 0"])
       s.add_development_dependency(%q<dynamic_form>, [">= 0"])
     else
       s.add_dependency(%q<twitter>, [">= 1.1"])
       s.add_dependency(%q<shortie>, [">= 0"])
       s.add_dependency(%q<governor>, [">= 0.5.3"])
-      s.add_dependency(%q<governor_background>, ["~> 0.2.2"])
+      s.add_dependency(%q<governor_background>, [">= 0.3.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_dependency(%q<sqlite3>, [">= 0"])
       s.add_dependency(%q<rspec-rails>, [">= 0"])
@@ -163,15 +160,15 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<activerecord-nulldb-adapter>, [">= 0"])
       s.add_dependency(%q<will_paginate>, ["~> 3.0.beta"])
       s.add_dependency(%q<devise>, [">= 0"])
-      s.add_dependency(%q<governor_twitter>, [">= 0"])
       s.add_dependency(%q<delayed_job>, [">= 0"])
+      s.add_dependency(%q<resque>, [">= 0"])
       s.add_dependency(%q<dynamic_form>, [">= 0"])
     end
   else
     s.add_dependency(%q<twitter>, [">= 1.1"])
     s.add_dependency(%q<shortie>, [">= 0"])
     s.add_dependency(%q<governor>, [">= 0.5.3"])
-    s.add_dependency(%q<governor_background>, ["~> 0.2.2"])
+    s.add_dependency(%q<governor_background>, [">= 0.3.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
     s.add_dependency(%q<sqlite3>, [">= 0"])
     s.add_dependency(%q<rspec-rails>, [">= 0"])
@@ -181,8 +178,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activerecord-nulldb-adapter>, [">= 0"])
     s.add_dependency(%q<will_paginate>, ["~> 3.0.beta"])
     s.add_dependency(%q<devise>, [">= 0"])
-    s.add_dependency(%q<governor_twitter>, [">= 0"])
     s.add_dependency(%q<delayed_job>, [">= 0"])
+    s.add_dependency(%q<resque>, [">= 0"])
     s.add_dependency(%q<dynamic_form>, [">= 0"])
   end
 end

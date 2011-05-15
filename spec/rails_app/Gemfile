@@ -8,9 +8,9 @@ gem 'rails', '3.0.5'
 gem 'sqlite3'
 
 gem 'devise'
-gem 'delayed_job'
+gem 'resque'
 gem 'governor'
-gem 'governor_background'
+gem 'governor_background', '>= 0.3.0'
 gem 'governor_twitter', :path => '../..'
 
 gem 'dynamic_form'

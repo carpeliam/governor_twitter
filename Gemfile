@@ -9,7 +9,7 @@ source "http://rubygems.org"
 gem 'twitter', '>= 1.1'
 gem 'shortie'
 gem 'governor', '>= 0.5.3'
-gem 'governor_background', '~> 0.2.2'
+gem 'governor_background', '>= 0.3.0'
 
 group :development, :test do
   gem 'jeweler', '~> 1.5.2'
@@ -24,5 +24,6 @@ group :development, :test do
   gem 'devise'
   gem 'governor_twitter', :path => './'
   gem 'delayed_job'
+  gem 'resque'
   gem 'dynamic_form'
 end

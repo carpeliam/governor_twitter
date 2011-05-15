@@ -7,7 +7,9 @@ module GovernorTwitter
       
       def send_to_twitter
         if params[:post_to_twitter] && resource.errors.blank?
-          resource.post_to_twitter_in_background(params[:twitter_content], polymorphic_url(resource))
+          content, url = params[:twitter_content], polymorphic_url(resource)
+          logger.info 'posting to twitter in the background'
+          GovernorBackground.run('twitter_post', content, url)
         end
       end
     end
