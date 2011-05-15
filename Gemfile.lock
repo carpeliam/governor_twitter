@@ -1,7 +1,7 @@
 PATH
   remote: ./
   specs:
-    governor_twitter (0.1.1)
+    governor_twitter (0.1.2)
       governor (>= 0.5.3)
       governor_background (>= 0.3.0)
       shortie

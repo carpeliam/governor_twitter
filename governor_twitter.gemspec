@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{governor_twitter}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Liam Morley"]
@@ -60,7 +60,6 @@ Gem::Specification.new do |s|
     "spec/rails_app/config/initializers/mime_types.rb",
     "spec/rails_app/config/initializers/secret_token.rb",
     "spec/rails_app/config/initializers/session_store.rb",
-    "spec/rails_app/config/initializers/twitter.rb",
     "spec/rails_app/config/locales/devise.en.yml",
     "spec/rails_app/config/locales/en.yml",
     "spec/rails_app/config/routes.rb",
@@ -115,7 +114,6 @@ Gem::Specification.new do |s|
     "spec/rails_app/config/initializers/mime_types.rb",
     "spec/rails_app/config/initializers/secret_token.rb",
     "spec/rails_app/config/initializers/session_store.rb",
-    "spec/rails_app/config/initializers/twitter.rb",
     "spec/rails_app/config/routes.rb",
     "spec/rails_app/db/migrate/20110329032256_devise_create_users.rb",
     "spec/rails_app/db/migrate/20110330020108_governor_create_articles.rb",
