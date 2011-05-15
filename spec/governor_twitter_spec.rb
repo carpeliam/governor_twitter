@@ -15,6 +15,6 @@ describe GovernorTwitter do
     shortened_url = 'http://bit.ly/short'
     Shortie::Service.find_by_key("bitly").expects(:shorten).with(url).returns(shortened_url)
     Twitter.expects(:update).with("#{content} #{shortened_url}")
-    GovernorBackground.run('twitter.post', content, url)
+    GovernorBackground.run('twitter_post', content, url)
   end
 end
