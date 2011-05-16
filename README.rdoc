@@ -24,7 +24,8 @@ post to twitter whenever you post or update an article.
 
 In your Gemfile, add the following:
 
-    gem 'twitter'
+    gem 'twitter', '>= 1.1'
+    gem 'shortie'
     gem 'governor'
     gem 'governor_background'
     # gem 'delayed_job'                                # if you're using delayed_job
