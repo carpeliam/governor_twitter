@@ -22,7 +22,17 @@ post to twitter whenever you post or update an article.
 
 == Setting up
 
-First, install the above dependencies. Then, make sure you follow instructions
+In your Gemfile, add the following:
+
+    gem 'twitter'
+    gem 'governor'
+    gem 'governor_background'
+    # gem 'delayed_job'                                # if you're using delayed_job
+    # gem 'resque', :require => 'resque/server'        # if you're using resque
+    # gem 'resque-status', :require => 'resque/status' # recommended if you're using resque
+    gem 'governor_twitter'
+
+Then, make sure you follow instructions
 for configuring Twitter, namely adding an initializer with your keys/secrets.
 
 == Contributing to governor_twitter
